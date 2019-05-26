@@ -14,6 +14,14 @@ Wrap Airfoil's Applescript interface with a JSON API.
     {"id":"F0D1A90B2769@loft-bathroom","volume":0.75}
     $ curl -X POST --data '0.76' http://localhost:8080/speakers/F0D1A90B2769@loft-bathroom/volume
     {"id":"F0D1A90B2769@loft-bathroom","volume":0.759999990463}
+    $ curl -X POST http://localhost:8080/playpause
+    {"success":true}
+    $ curl -X POST http://localhost:8080/next
+    {"success":true}
+    $ curl -X POST http://localhost:8080/previous
+    {"success":true}
+    $ curl http://localhost:8080/now_playing
+    {"artist":"XTC","album":"Apple Venus Volume 1","track":"Harvest Festival"}
 
   ## Setup
 
